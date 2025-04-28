@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réponse - Fabien & Mathilde</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>Confirmez votre présence</h1>
+</header>
+
+<main>
+    <section class="rsvp-section">
+        <h2>Formulaire de confirmation</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="rsvp-form">
+            <input type="text" name="Nom et Prénom" placeholder="Votre nom complet" required><br>
+            
+            <label for="accompagne">Serez-vous accompagné(e) ?</label><br>
+            <select name="Accompagné" id="accompagne" required>
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+            </select><br>
+
+            <label for="arrivee">Date d'arrivée prévue</label><br>
+            <input type="date" name="Date d'arrivée" id="arrivee" required><br>
+
+            <label for="depart">Date de départ prévue</label><br>
+            <input type="date" name="Date de départ" id="depart" required><br>
+
+            <textarea name="Commentaire Nourriture" placeholder="Allergies, préférences alimentaires..." rows="4"></textarea><br>
+
+            <button type="submit">Envoyer ma réponse</button>
+        </form>
+    </section>
+</main>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="info.html">Infos Mariage</a></li>
+        <li><a href="conseils.html">Conseils</a></li>
+    </ul>
+</nav>
+
+<footer>
+    <p>Merci pour votre réponse ❤️ Fabien & Mathilde</p>
+</footer>
+
+<script src="js/form_handler.js"></script>
+<script src="js/lang.js"></script>
+
+</body>
+</html>
